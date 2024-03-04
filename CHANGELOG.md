@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.7.5 | 04/03/2024
+
+- Bug Fix
+
 ## 1.7.4 | 04/03/2024
 - update `statusBar.background` color
 - update `statusBar.foreground` color

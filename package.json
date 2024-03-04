@@ -29,7 +29,7 @@
       {
         "label": "Evro Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Evro Dark-color-theme.json"
+        "path": "./themes/EvroDark.json"
       }
     ]
   }
