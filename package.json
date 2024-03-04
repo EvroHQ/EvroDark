@@ -28,9 +28,7 @@
         "label": "Evro Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/Evro Dark-color-theme.json",
-        "images": {
-          "icon": "./logo/evrodarklogo.png"
-        }
+        "icon": "icon.png"
       }
     ]
   }
