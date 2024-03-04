@@ -89,12 +89,12 @@
     {
       "name": "Entity Name Type",
       "scope": ["entity.name.type"],
-      "settings": { "foreground": "#E5C07B" }
+      "settings": { "foreground": "#DBD594" }
     },
     {
       "name": "Entity Other Inherited Class",
       "scope": ["entity.other.inherited-class"],
-      "settings": { "foreground": "#E5C07B" }
+      "settings": { "foreground": "#F5B187" }
     },
     {
       "name": "Keyword",
