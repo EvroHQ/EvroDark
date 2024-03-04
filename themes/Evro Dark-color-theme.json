@@ -633,7 +633,7 @@
         "source.js keyword.operator.typeof",
         "source.js keyword.operator.void"
       ],
-      "settings": { "foreground": "#C678DD" }
+      "settings": { "foreground": "#959AA5" }
     },
     {
       "name": "Source Ts Keyword Operator",

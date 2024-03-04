@@ -1,4 +1,4 @@
-# [Evro Dark]
+# Evro Dark
 
 ## [GitHub Repo](https://github.com/evrohq/EvroDark) 
 
@@ -27,5 +27,5 @@ A vibrant and dynamic theme designed to enhance your coding experience.
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.cursorStyle": "line",
-    "editor.cursorWidth": 5,
+    "editor.cursorWidth": 2,
 ```
