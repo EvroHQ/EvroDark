@@ -2,7 +2,7 @@
 
 ## [GitHub Repo](https://github.com/evrohq/EvroDark) 
 
-A vibrant and dynamic theme designed to enhance your coding experience. [themes](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs) for VS Code! 
+A vibrant and dynamic theme designed to enhance your coding experience.
 
 ## REACT SCREENSHOT
 
