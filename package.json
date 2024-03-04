@@ -4,6 +4,10 @@
   "description": "A vibrant and dynamic theme designed to enhance your coding experience.",
   "version": "1.0.0",
   "publisher": "EvroHQ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evrohq/EvroDark"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },
