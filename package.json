@@ -4,6 +4,8 @@
   "description": "A vibrant and dynamic theme designed to enhance your coding experience.",
   "version": "1.2.0",
   "publisher": "EvroHQ",
+  "license": "MIT",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/evrohq/EvroDark"
@@ -27,8 +29,7 @@
       {
         "label": "Evro Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Evro Dark-color-theme.json",
-        "icon": "icon.png"
+        "path": "./themes/Evro Dark-color-theme.json"
       }
     ]
   }
