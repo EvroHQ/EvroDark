@@ -1,10 +1,13 @@
-# Evro Dark
+# Evro Dark VSCode theme
 
 ## [GitHub Repo](https://github.com/evrohq/EvroDark) 
 
 A vibrant and dynamic theme designed to enhance your coding experience.
 
-## REACT SCREENSHOT
+### EDITOR
+![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/Editor.png)
+
+### REACT
 
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/reactjs.png)
 
