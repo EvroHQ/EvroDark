@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.7.6 | 05/03/2024
+- update README.md
+
 ## 1.7.5 | 04/03/2024
 - Bug Fix
 
