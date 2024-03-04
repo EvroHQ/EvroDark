@@ -1,29 +1,27 @@
 # Evro Dark VSCode theme
 
-## [GitHub Repo](https://github.com/evrohq/EvroDark) 
+![Evro Dark VSCode theme](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/banner.png)
 
-A vibrant and dynamic theme designed to enhance your coding experience.
-
-### EDITOR
+## EDITOR
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/Editor.png)
 
-### REACT
+## REACT
 
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/reactjs.png)
 
-### JAVASCRIPT
+## JAVASCRIPT
 
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/javascript.png)
 
-### CSS
+## CSS
 
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/css.png)
 
-### HTML
+## HTML
 
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/html.png)
 
-### Suggest Editor Settings
+## Suggest Editor Settings
 ```
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
