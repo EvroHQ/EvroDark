@@ -1,9 +1,4 @@
-# Change Log
+# CHANGELOG
 
-All notable changes to the "evro-dark" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## 1.8.0 | 04/03/2024
+- activityBarBadge Colors
