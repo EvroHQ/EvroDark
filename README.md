@@ -6,7 +6,7 @@ A vibrant and dynamic theme designed to enhance your coding experience.
 
 ## REACT SCREENSHOT
 
-![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/react.png)
+![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/reactjs.png)
 
 ### JAVASCRIPT
 
