@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.7.9 | 05/03/2024
+- Bug Fix in EvroDark.json
+
+## 1.7.8 | 05/03/2024
+- update README.md
+
 ## 1.7.7 | 05/03/2024
 - update package.json
 
