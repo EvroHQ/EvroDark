@@ -6,7 +6,8 @@
 
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/Editor.png)
 
-![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/javascript.png)
+## 
+![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/js.png)
 </div>
 
 ## Suggested Editor Settings
