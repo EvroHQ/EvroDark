@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.7.7 | 05/03/2024
+- update package.json
+
 ## 1.7.6 | 05/03/2024
 - update README.md
 
