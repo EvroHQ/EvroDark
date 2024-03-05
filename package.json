@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/evrohq/EvroDark"
   },
+  "galleryBanner": {
+    "color": "#190E1F",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -19,7 +23,8 @@
     "one dark",
     "evro theme",
     "evro dark",
-    "sublime dark"
+    "sublime dark",
+    "GitHub"
   ],
   "categories": [
     "Themes"
