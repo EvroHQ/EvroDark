@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.8.0 | 05/03/2024
+- update js.png
+
 ## 1.7.9 | 05/03/2024
 - Bug Fix in EvroDark.json
 
