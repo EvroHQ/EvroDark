@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.7.12 | 07/03/2024
+- Added badges in README.md
+
 ## 1.7.11 | 05/03/2024
 - update js.png
 
