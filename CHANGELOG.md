@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.7.14 | 07/03/2024
+## 1.7.14 | 10/03/2024
 
 - Change Banner to README.md
 
