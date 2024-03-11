@@ -1,5 +1,32 @@
 # CHANGELOG
 
+## 1.8.0 | 11/03/2024
+
+- update `titleBar.activeBackground` color
+- update `titleBar.inactiveBackground` color
+
+- update `activityBar.background` color
+- update `activityBar.foreground` color
+- update `activityBar.border` color
+- update `activityBar.activeBorder` color
+- update `activityBarBadge.background` color
+
+- update `tab.activeBackground` color
+- update `tab.activeForeground` color
+- update `tab.activeBorderTop` color
+- update `tab.inactiveForeground` color
+
+- update `list.hoverBackground` color
+- update `list.activeSelectionBackground` color
+
+- update `focusBorder` color
+
+- update `editorCursor.foreground` color
+
+- update `sideBar.foreground` color
+
+- update `meta.tag` scope color
+
 ## 1.7.14 | 10/03/2024
 
 - Change Banner to README.md
