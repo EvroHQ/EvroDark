@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.8.1 | 12/03/2024
+
+- update README.md
+- update screenshots
+
 ## 1.8.0 | 11/03/2024
 
 - update `titleBar.activeBackground` color

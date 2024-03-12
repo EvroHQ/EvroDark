@@ -1,15 +1,14 @@
+![Evro Dark VSCode theme](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/banner.png)
+A Visual Studio Code theme crafted for nocturnal coding sessions, Evro Dark reigns supreme as the ultimate companion for working in both high and low light environments. Its captivating color scheme is meticulously curated to enhance readability and foster an immersive coding experience. Immerse yourself in the enchanting glow of Evro Dark and let your creativity soar under the stars of the digital night sky. ✨
+
 <div align="center">
 
-![Evro Dark VSCode theme](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/banner1.png)
-
-# Evro Dark Theme for VSCode
+# Evro Dark Theme for VS Code
 
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/EvroHQ.evro-dark?style=for-the-badge&logo=docusign&logoColor=white&labelColor=2b303b&color=96E072)
 ![Visual Studio Marketplace Ratings](https://img.shields.io/visual-studio-marketplace/stars/EvroHQ.evro-dark?style=for-the-badge&logo=reverbnation&logoColor=white&labelColor=2b303b&color=FFE66D)
 
-![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/Editor.png)
-
-![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/js.png)
+![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/theme-editor.png)
 
 </div>
 
