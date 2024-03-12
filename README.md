@@ -1,7 +1,12 @@
-![Evro Dark VSCode theme](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/banner.png)
-A Visual Studio Code theme crafted for nocturnal coding sessions, Evro Dark reigns supreme as the ultimate companion for working in both high and low light environments. Its captivating color scheme is meticulously curated to enhance readability and foster an immersive coding experience. Immerse yourself in the enchanting glow of Evro Dark and let your creativity soar under the stars of the digital night sky. ✨
-
 <div align="center">
+
+![Evro Dark VSCode theme](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/banner.png)
+<br/>
+<br/>
+<span style="font-family:Calibri;font-size:16px">
+A Visual Studio Code theme crafted for nocturnal coding sessions, Evro Dark reigns supreme as the ultimate companion for working in both high and low light environments. Its captivating color scheme is meticulously curated to enhance readability and foster an immersive coding experience. Immerse yourself in the enchanting glow of Evro Dark and let your creativity soar under the stars of the digital night sky. ✨
+</span>
+<br/>
 
 # Evro Dark Theme for VS Code
 
