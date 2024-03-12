@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.8.2 | 12/03/2024
+
+- update description in `package.json`
+
 ## 1.8.1 | 12/03/2024
 
 - update README.md
