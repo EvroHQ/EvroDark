@@ -1,5 +1,41 @@
 # CHANGELOG
 
+## 1.9.1 | 20/03/2024
+
+**Evro Dark colors**
+
+- update `menu.background` color
+- update `menu.foreground` color
+
+- update `terminal.border` color
+- update `terminal.ansiBlack` color
+- update `terminal.ansiBlue` color
+- update `terminal.ansiBrightBlack` color
+- update `terminal.ansiBrightBlue` color
+- update `terminal.ansiBrightCyan` color
+- update `terminal.ansiBrightGreen` color
+- update `terminal.ansiBrightMagenta` color
+- update `terminal.ansiBrightRed` color
+- update `terminal.ansiBrightWhite` color
+- update `terminal.ansiBrightYellow` color
+- update `terminal.ansiCyan` color
+- update `terminal.ansiGreen` color
+- update `terminal.ansiMagenta` color
+- update `terminal.ansiRed` color
+- update `terminal.ansiWhite` color
+- update `terminal.ansiYellow` color
+
+- update `notifications.foreground` color
+- update `notifications.background` color
+- update `notificationToast.border` color
+- update `notificationsErrorIcon.foreground` color
+- update `notificationsWarningIcon.foreground` color
+- update `notificationsInfoIcon.foreground` color
+- update `notificationCenter.border` color
+- update `notificationCenterHeader.foreground` color
+- update `notificationCenterHeader.background` color
+- update `notifications.border` color
+
 ## 1.9.0 | 20/03/2024
 
 - Added `Evro Darker Flat Theme`
