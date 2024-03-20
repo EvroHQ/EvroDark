@@ -35,6 +35,11 @@
         "label": "Evro Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/EvroDark.json"
+      },
+      {
+        "label": "Evro Darker Flat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/EvroDarkerFlat.json"
       }
     ]
   }

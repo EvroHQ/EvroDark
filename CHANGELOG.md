@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.9.0 | 20/03/2024
+
+- Added `Evro Darker Flat Theme`
+
 ## 1.8.2 | 12/03/2024
 
 - update description in `package.json`
