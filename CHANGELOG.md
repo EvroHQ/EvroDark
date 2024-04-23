@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.9.2 | 23/04/2024
+## 1.9.4 | 23/04/2024
 
 **Evro Dark** & **Evro Darker Flat**
 
