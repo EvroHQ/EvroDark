@@ -152,6 +152,12 @@
       }
     },
     {
+      "scope": ["meta.jsx"],
+      "settings": {
+        "foreground": "#959AA5"
+      }
+    },
+    {
       "name": "Keyword Other Special Method",
       "scope": ["keyword.other.special-method"],
       "settings": { "foreground": "#61AFEF" }
@@ -502,9 +508,24 @@
       "settings": { "foreground": "#98C379" }
     },
     {
-      "name": "Source C Keyword Operator",
-      "scope": ["source.c keyword.operator"],
-      "settings": { "foreground": "#959AA5" }
+      "name": "Markup Raw",
+      "scope": ["markup.raw"],
+      "settings": { "foreground": "#98C379" }
+    },
+    {
+      "name": "CSS Entity other keyframe-offset",
+      "scope": ["entity.other.keyframe-offset.css"],
+      "settings": { "foreground": "#76ECB7D5" }
+    },
+    {
+      "name": "CSS Variable parameter keyframe-list",
+      "scope": ["variable.parameter.keyframe-list.css"],
+      "settings": { "foreground": "#76ECB7D5" }
+    },
+    {
+      "name": "CSS Meta at-rule media header",
+      "scope": ["meta.at-rule.media.header.css"],
+      "settings": { "foreground": "#76ECB7D5" }
     },
     {
       "name": "Source Cpp Keyword Operator",
@@ -810,12 +831,12 @@
     {
       "name": "[VSCODE-CUSTOM] JSON Property Name",
       "scope": "support.type.property-name.json",
-      "settings": { "foreground": "#E06C75" }
+      "settings": { "foreground": "#9C89D0" }
     },
     {
       "name": "[VSCODE-CUSTOM] JSON Punctuation for Property Name",
       "scope": "support.type.property-name.json punctuation",
-      "settings": { "foreground": "#E06C75" }
+      "settings": { "foreground": "#9D88D890" }
     },
     {
       "name": "[VSCODE-CUSTOM] JS/TS Punctuation for key-value",

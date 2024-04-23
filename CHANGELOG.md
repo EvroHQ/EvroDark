@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.9.2 | 23/04/2024
+
+**Evro Dark** & **Evro Darker Flat**
+
+- update `meta.jsx` color
+- update `support.type.property-name.json punctuation` color
+- update `entity.other.keyframe-offset.css` color
+- update `variable.parameter.keyframe-list.css` color
+- update `meta.at-rule.media.header.css` color
+
 ## 1.9.1 | 20/03/2024
 
 **Evro Dark colors**
