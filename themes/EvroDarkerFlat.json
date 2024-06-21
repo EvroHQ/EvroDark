@@ -71,7 +71,7 @@
     "focusBorder": "#76ecb728",
     "list.activeSelectionBackground": "#1f252b",
     "list.activeSelectionForeground": "#D7DAE0",
-    "list.focusBackground": "#2C313A",
+    "list.focusBackground": "#76ecb728",
     "list.hoverBackground": "#76ecb728",
     "list.highlightForeground": "#D7DAE0",
     "list.inactiveSelectionBackground": "#2C313A",

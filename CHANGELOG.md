@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.9.5 | 21/06/2024
+
+### Issue #1 Patch
+
+Thanks [@ehazan](https://github.com/ehazan)! - Selection colors
+
+- Fix `list.focusBackground` color
+
 ## 1.9.4 | 23/04/2024
 
 **Evro Dark** & **Evro Darker Flat**
