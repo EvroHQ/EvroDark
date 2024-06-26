@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.9.6 | 26/06/2024
+
+### Issue #2 Patch
+
+Thanks [@ehazan](https://github.com/ehazan)! - Selection colors
+
+- Fix `list.activeSelectionBackground` color
+
 ## 1.9.5 | 21/06/2024
 
 ### Issue #1 Patch

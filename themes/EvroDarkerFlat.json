@@ -69,7 +69,7 @@
     "input.background": "#1B1D23",
     "input.border": "#181A1F",
     "focusBorder": "#76ecb728",
-    "list.activeSelectionBackground": "#1f252b",
+    "list.activeSelectionBackground": "#76ecb728",
     "list.activeSelectionForeground": "#D7DAE0",
     "list.focusBackground": "#76ecb728",
     "list.hoverBackground": "#76ecb728",
