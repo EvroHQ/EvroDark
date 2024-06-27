@@ -11,8 +11,8 @@
     "url": "https://github.com/evrohq/EvroDark"
   },
   "galleryBanner": {
-    "color": "#190E1F",
-    "theme": "dark"
+    "color": "#c6e1d1",
+    "theme": "light"
   },
   "engines": {
     "vscode": "^1.87.0"
