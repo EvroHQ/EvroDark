@@ -1,8 +1,9 @@
 # CHANGELOG
 
-## 1.9.7 | 27/06/2024
+## 1.9.8 | 27/06/2024
 
-- Update icon + Banner
+- Update icon
+- Update Marketplace colors
 
 ## 1.9.6 | 26/06/2024
 
