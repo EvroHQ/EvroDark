@@ -1,6 +1,6 @@
 <div align="center">
 
-![Evro Dark VSCode theme](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/banner.png)
+![Evro Dark VSCode theme](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/bannerevrodark.png)
 <br/>
 <br/>
 <span style="font-family:Calibri;font-size:16px">

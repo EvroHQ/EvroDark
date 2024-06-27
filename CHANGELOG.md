@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.9.7 | 27/06/2024
+
+- Update icon + Banner
+
 ## 1.9.6 | 26/06/2024
 
 ### Issue #2 Patch
