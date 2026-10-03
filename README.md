@@ -10,8 +10,8 @@ A Visual Studio Code theme crafted for nocturnal coding sessions, Evro Dark reig
 
 # Evro Dark Theme for VS Code
 
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/EvroHQ.evro-dark?style=for-the-badge&logo=docusign&logoColor=white&labelColor=2b303b&color=96E072)
-![Visual Studio Marketplace Ratings](https://img.shields.io/visual-studio-marketplace/stars/EvroHQ.evro-dark?style=for-the-badge&logo=reverbnation&logoColor=white&labelColor=2b303b&color=FFE66D)
+![Visual Studio Marketplace Installs](https://vsmarketplacebadges.dev/installs-short/EvroHQ.evro-dark.svg?style=for-the-badge&labelColor=2b303b&color=96E072)
+![Visual Studio Marketplace Rating](https://vsmarketplacebadges.dev/rating-star/EvroHQ.evro-dark.svg?style=for-the-badge&labelColor=2b303b&color=FFE66D)
 
 ![ScreenShot](https://cdn.jsdelivr.net/gh/EvroHQ/EvroDark@master/screenshots/theme-editor.png)
 
