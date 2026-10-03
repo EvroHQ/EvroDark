@@ -1496,6 +1496,51 @@
       "name": "[VSCODE-CUSTOM] PHP Meta Class",
       "scope": "meta.class.php",
       "settings": { "foreground": "#ABB2BF" }
+    },
+    {
+      "name": "[VSCODE-CUSTOM] PHP Class References",
+      "scope": [
+        "source.php support.class",
+        "source.php support.attribute",
+        "source.php entity.other.inherited-class"
+      ],
+      "settings": { "foreground": "#56B6C2" }
+    },
+    {
+      "name": "[VSCODE-CUSTOM] PHP Namespace Path",
+      "scope": [
+        "source.php support.other.namespace",
+        "source.php meta.use.php punctuation.separator.inheritance"
+      ],
+      "settings": { "foreground": "#DBD594" }
+    },
+    {
+      "name": "[VSCODE-CUSTOM] PHP Attribute",
+      "scope": "meta.attribute.php",
+      "settings": { "foreground": "#959AA5" }
+    },
+    {
+      "name": "[VSCODE-CUSTOM] PHP Named Argument",
+      "scope": "entity.name.variable.parameter.php",
+      "settings": { "foreground": "#D19A66" }
+    },
+    {
+      "name": "[VSCODE-CUSTOM] PHP Property",
+      "scope": "variable.other.property.php",
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "[VSCODE-CUSTOM] PHP This",
+      "scope": [
+        "variable.language.this.php",
+        "variable.language.this.php punctuation.definition.variable.php"
+      ],
+      "settings": { "foreground": "#E06C75", "fontStyle": "italic" }
+    },
+    {
+      "name": "[VSCODE-CUSTOM] PHP Array Brackets",
+      "scope": "source.php punctuation.section.array",
+      "settings": { "foreground": "#ABB2BF" }
     }
   ]
 }

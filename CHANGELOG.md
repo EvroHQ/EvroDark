@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2.0.0 | 04/10/2026
+
+**Evro Dark** & **Evro Darker Flat** - PHP support
+
+- Class references (`User::`, `new PDO`, exceptions, type hints, `extends` / `implements`) now in cyan, distinct from keywords
+- `use` namespace paths colored like `namespace` declarations
+- PHP 8 attributes: `#[ ]` dimmed, attribute name in cyan, named arguments in orange
+- Properties (`->name`) in blue, `$this` in italic
+- Neutral array brackets inside strings and HTML attributes
+
 ## 1.9.8 | 27/06/2024
 
 - Update icon
