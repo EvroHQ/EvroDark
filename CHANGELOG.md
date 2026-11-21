@@ -1,4 +1,12 @@
 # CHANGELOG
+## 1.1.0 | 21/11/2026
+**EVO | Neon** - more neon (EVO | Void is unchanged)
+- Saturated neon syntax: mint strings, azure types, orchid storage keywords and properties, neon orange constants, neon yellow `this` and attributes, ultraviolet comments and punctuation
+- Ultraviolet glow borders between parts, violet glow shadows under widgets, cyan panel and terminal borders
+- Deep ultraviolet status bar with cyan text and a magenta top border
+- Cyan text for the active tab, selected and hovered list items, panel titles, active line number and keybinding labels; magenta for search matches, the panel tab underline and hovered tabs
+- Neon occurrence and find-match borders in the editor, cyan active indent guide, brighter terminal ANSI colors and Git decorations, violet-tinted widgets, menus, command palette and chat
+- All text stays at WCAG AA contrast (4.5:1) or better on its background
 ## 1.0.0 | 20/11/2026
 **EVO Afterdark** (`messified.evo-afterdark`), forked from Evro Dark 2.0.0
 - Added **EVO | Neon** (from Evro Dark) and **EVO | Void** (from Evro Darker Flat); the Evro themes are no longer contributed

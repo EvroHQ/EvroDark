@@ -22,61 +22,65 @@ const variants = [
     label: 'EVO | Neon',
     source: 'themes/EvroDark.json',
     output: 'themes/evo-neon-color-theme.json',
+    // Neon-only workbench overrides (glowing borders, tinted selections, neon chrome text).
+    colorOverrides: neonColorOverrides,
     palette: {
-      // Surfaces, darkest to lightest.
-      bg0: '#070A16', // activity bar, title bar, status bar
+      // Surfaces, darkest to lightest. Chrome and widgets carry an ultraviolet tint.
+      bg0: '#0A0820', // activity bar, title bar
       bg1: '#090D1B', // side bar, panel, terminal, inactive tabs
       bg: '#0B1020', // editor
-      bg2: '#10172C', // widgets, hovers, quick input, menus
-      bg3: '#151D36', // inputs, dropdowns
-      bg4: '#1B2544', // strong hover
-      lineHighlight: '#111831',
-      border: '#1A2240',
-      borderStrong: '#26315A',
-      lineNumber: '#4A5780',
-      indentGuide: '#1A2240',
+      bg2: '#121438', // widgets, hovers, quick input, menus
+      bg3: '#171A42', // inputs, dropdowns
+      bg4: '#201F52', // strong hover
+      statusBar: '#150C36', // deep ultraviolet status bar
+      lineHighlight: '#141838',
+      border: '#2A2660', // ultraviolet glow line between parts
+      borderStrong: '#3D3585',
+      lineNumber: '#5F5F9E',
+      indentGuide: '#201F4A',
       // Text.
       fg: '#DCE7F7',
-      fgMuted: '#9AA8C7',
-      fgDim: '#66769E',
+      fgMuted: '#A9B5DD',
+      fgDim: '#7F7CB8',
       // Brand accents.
       cyan: '#36E6F6',
       cyanBright: '#7FF0FA',
       uv: '#B78CFF',
       uvBright: '#CDB1FF',
+      uvDim: '#8E84D6',
       magenta: '#FF5DBC',
       magentaBright: '#FF8AD0',
       // Status colors.
-      green: '#5CF2B0',
-      yellow: '#FFC66D',
-      red: '#FF5C8A',
-      blue: '#6FA8FF',
+      green: '#3DFFB2',
+      yellow: '#FFD25C',
+      red: '#FF4D88',
+      blue: '#5E9BFF',
       ansi: {
-        black: '#1B2340', red: '#FF5C8A', green: '#5CF2B0', yellow: '#FFC66D',
-        blue: '#6FA8FF', magenta: '#FF5DBC', cyan: '#36E6F6', white: '#C3CFE6',
-        brightBlack: '#6B7AA3', brightRed: '#FF85A6', brightGreen: '#8DF7C9', brightYellow: '#FFD994',
-        brightBlue: '#9CC2FF', brightMagenta: '#FF8AD0', brightCyan: '#7FF0FA', brightWhite: '#F4F8FF',
+        black: '#262150', red: '#FF4D88', green: '#3DFFB2', yellow: '#FFD25C',
+        blue: '#5E9BFF', magenta: '#FF5DBC', cyan: '#36E6F6', white: '#C8D2EE',
+        brightBlack: '#8079B8', brightRed: '#FF7AA6', brightGreen: '#7DFFCB', brightYellow: '#FFE38A',
+        brightBlue: '#8CB8FF', brightMagenta: '#FF8AD0', brightCyan: '#7FF0FA', brightWhite: '#F4F8FF',
       },
-      // Syntax roles.
+      // Syntax roles: saturated neon hues around the cyan / ultraviolet / magenta anchors.
       syntax: {
         text: '#DCE7F7',
-        textMuted: '#B1BED8',
-        punctuation: '#8794B2',
-        dim: '#56658C',
-        comment: '#6E7EA8',
+        textMuted: '#BFC7F0',
+        punctuation: '#8D90CC',
+        dim: '#625E9C',
+        comment: '#8079B8',
         keyword: '#B78CFF',
-        storage: '#A08FF2',
+        storage: '#CF7DFF',
         function: '#36E6F6',
-        type: '#8CC8FF',
+        type: '#62B0FF',
         operator: '#FF5DBC',
         tag: '#FF5DBC',
-        property: '#C3B5FF',
-        constant: '#FFB86C',
-        constantDim: '#E0A374',
-        gold: '#FFD68A',
-        string: '#8FF0C8',
-        link: '#7FA7FF',
-        interpolation: '#FF6F91',
+        property: '#DDA6FF',
+        constant: '#FFA64D',
+        constantDim: '#F29A5E',
+        gold: '#FFE066',
+        string: '#5EFFC1',
+        link: '#6F9BFF',
+        interpolation: '#FF4F9A',
       },
     },
   },
@@ -699,6 +703,206 @@ function workbenchColors(p) {
   };
 }
 
+// EVO | Neon only: applied on top of workbenchColors(). Large surfaces stay dark;
+// the neon goes into borders, focus and selection states, chrome text and glows.
+function neonColorOverrides(p) {
+  return {
+    // Base
+    focusBorder: alpha(p.cyan, 'B3'),
+    'icon.foreground': p.uvBright,
+    'selection.background': alpha(p.uv, '66'),
+    'widget.shadow': alpha(p.uv, '40'),
+    'widget.border': alpha(p.uv, '66'),
+    'sash.hoverBorder': p.cyan,
+    'progressBar.background': p.magenta,
+    'toolbar.hoverBackground': alpha(p.cyan, '26'),
+    'scrollbar.shadow': alpha(p.cyan, '33'),
+    'scrollbarSlider.background': alpha(p.uv, '33'),
+    'scrollbarSlider.hoverBackground': alpha(p.uv, '59'),
+    'scrollbarSlider.activeBackground': alpha(p.cyan, '80'),
+    'badge.background': p.magenta,
+
+    // Buttons and inputs
+    'button.hoverBackground': p.magenta,
+    'extensionButton.hoverBackground': p.magenta,
+    'input.border': alpha(p.uv, '59'),
+    'inputOption.activeBackground': alpha(p.cyan, '33'),
+    'inputOption.activeBorder': p.cyan,
+    'dropdown.border': alpha(p.uv, '59'),
+    'checkbox.border': alpha(p.uv, '80'),
+
+    // Title bar, command center, activity bar, status bar
+    'titleBar.activeForeground': p.fg,
+    'titleBar.border': alpha(p.uv, '59'),
+    'commandCenter.background': p.bg2,
+    'commandCenter.foreground': p.fg,
+    'commandCenter.border': alpha(p.cyan, '4D'),
+    'commandCenter.activeBackground': alpha(p.cyan, '1A'),
+    'commandCenter.activeBorder': p.cyan,
+    'activityBar.foreground': p.cyan,
+    'activityBar.inactiveForeground': p.uvDim,
+    'activityBar.activeBackground': alpha(p.cyan, '1F'),
+    'activityBar.activeFocusBorder': p.magenta,
+    'statusBar.background': p.statusBar,
+    'statusBar.foreground': p.cyan,
+    'statusBar.border': alpha(p.magenta, '99'),
+    'statusBar.noFolderBackground': p.statusBar,
+    'statusBar.noFolderForeground': p.cyan,
+    'statusBarItem.hoverBackground': alpha(p.cyan, '26'),
+    'statusBarItem.hoverForeground': p.cyanBright,
+    'statusBarItem.activeBackground': alpha(p.cyan, '40'),
+    'statusBarItem.remoteBackground': p.magenta,
+    'statusBarItem.remoteHoverBackground': p.magentaBright,
+    'statusBarItem.remoteHoverForeground': p.bg0,
+    'statusBarItem.prominentBackground': alpha(p.magenta, '40'),
+
+    // Side bar and explorer
+    'sideBarTitle.foreground': p.cyan,
+    'sideBarSectionHeader.background': alpha(p.uv, '14'),
+    'sideBarSectionHeader.foreground': p.uvBright,
+    'list.activeSelectionBackground': alpha(p.uv, '4D'),
+    'list.activeSelectionForeground': p.cyanBright,
+    'list.inactiveSelectionBackground': alpha(p.uv, '29'),
+    'list.hoverBackground': alpha(p.cyan, '1A'),
+    'list.hoverForeground': p.cyanBright,
+    'list.focusBackground': alpha(p.uv, '4D'),
+    'list.focusForeground': p.cyanBright,
+    'list.focusOutline': alpha(p.cyan, 'B3'),
+    'list.highlightForeground': p.magenta,
+    'list.focusHighlightForeground': p.magentaBright,
+    'list.dropBackground': alpha(p.uv, '33'),
+    'listFilterWidget.outline': p.magenta,
+    'tree.indentGuidesStroke': alpha(p.uv, '66'),
+    'tree.inactiveIndentGuidesStroke': alpha(p.uv, '33'),
+
+    // Command palette / quick input, menus, keybindings
+    'quickInputList.focusBackground': alpha(p.uv, '4D'),
+    'quickInputList.focusForeground': p.cyanBright,
+    'pickerGroup.foreground': p.magenta,
+    'keybindingLabel.background': alpha(p.cyan, '14'),
+    'keybindingLabel.foreground': p.cyanBright,
+    'keybindingLabel.border': alpha(p.cyan, '4D'),
+    'keybindingLabel.bottomBorder': alpha(p.cyan, '33'),
+    'menu.border': alpha(p.uv, '80'),
+    'menu.selectionBackground': alpha(p.uv, '4D'),
+    'menu.selectionForeground': p.cyanBright,
+    'menubar.selectionBackground': alpha(p.uv, '33'),
+
+    // Editor groups and tabs
+    'editorGroup.dropBackground': alpha(p.uv, '26'),
+    'tab.activeForeground': p.cyanBright,
+    'tab.unfocusedActiveForeground': p.fg,
+    'tab.unfocusedActiveBorderTop': alpha(p.uv, '99'),
+    'tab.hoverBackground': alpha(p.uv, '1F'),
+    'tab.hoverForeground': p.cyanBright,
+    'tab.hoverBorder': alpha(p.magenta, '99'),
+    'tab.selectedBorderTop': p.magenta,
+    'breadcrumb.focusForeground': p.cyanBright,
+    'breadcrumb.activeSelectionForeground': p.magenta,
+
+    // Editor
+    'editorLineNumber.activeForeground': p.cyan,
+    'editor.inactiveSelectionBackground': alpha(p.uv, '2E'),
+    'editor.selectionHighlightBackground': alpha(p.uv, '26'),
+    'editor.selectionHighlightBorder': alpha(p.uv, '80'),
+    'editor.wordHighlightBackground': alpha(p.cyan, '1F'),
+    'editor.wordHighlightBorder': alpha(p.cyan, '66'),
+    'editor.wordHighlightStrongBackground': alpha(p.magenta, '26'),
+    'editor.wordHighlightStrongBorder': alpha(p.magenta, '80'),
+    'editor.findMatchBackground': alpha(p.magenta, '59'),
+    'editor.findMatchHighlightBackground': alpha(p.magenta, '2E'),
+    'editor.findMatchHighlightBorder': alpha(p.magenta, '80'),
+    'editor.lineHighlightBorder': alpha(p.uv, '1F'),
+    'editor.rangeHighlightBackground': alpha(p.uv, '1A'),
+    'editor.hoverHighlightBackground': alpha(p.cyan, '1F'),
+    'editorLink.activeForeground': p.cyanBright,
+    'editorWhitespace.foreground': alpha(p.uv, '4D'),
+    'editorIndentGuide.background1': alpha(p.uv, '26'),
+    'editorIndentGuide.activeBackground1': alpha(p.cyan, '99'),
+    'editorRuler.foreground': alpha(p.magenta, '33'),
+    'editorCodeLens.foreground': p.uvDim,
+    'editorInlayHint.background': alpha(p.uv, '1F'),
+    'editorInlayHint.foreground': p.uvDim,
+    'editorBracketMatch.background': alpha(p.cyan, '26'),
+    'editorBracketMatch.border': p.cyan,
+    'editorStickyScroll.shadow': alpha(p.uv, '66'),
+    'editorOverviewRuler.border': alpha(p.uv, '33'),
+
+    // Editor widgets
+    'editorWidget.border': alpha(p.uv, '80'),
+    'editorWidget.resizeBorder': p.magenta,
+    'editorHoverWidget.border': alpha(p.uv, '99'),
+    'editorSuggestWidget.border': alpha(p.uv, '99'),
+    'editorSuggestWidget.selectedBackground': alpha(p.uv, '4D'),
+    'editorSuggestWidget.selectedForeground': p.cyanBright,
+    'editorSuggestWidget.highlightForeground': p.magenta,
+    'editorSuggestWidget.focusHighlightForeground': p.magentaBright,
+    'peekView.border': p.magenta,
+    'peekViewTitleLabel.foreground': p.cyan,
+
+    // Diffs and merge conflicts
+    'diffEditor.insertedTextBackground': alpha(p.green, '33'),
+    'diffEditor.insertedLineBackground': alpha(p.green, '17'),
+    'diffEditor.removedTextBackground': alpha(p.red, '38'),
+    'diffEditor.removedLineBackground': alpha(p.red, '17'),
+    'diffEditor.move.border': p.magenta,
+    'diffEditorGutter.insertedLineBackground': alpha(p.green, '33'),
+    'diffEditorGutter.removedLineBackground': alpha(p.red, '33'),
+    'merge.currentHeaderBackground': alpha(p.cyan, '59'),
+    'merge.currentContentBackground': alpha(p.cyan, '1F'),
+    'merge.incomingHeaderBackground': alpha(p.uv, '59'),
+    'merge.incomingContentBackground': alpha(p.uv, '1F'),
+
+    // Git decorations
+    'gitDecoration.untrackedResourceForeground': p.cyan,
+
+    // Panels
+    'panel.border': alpha(p.cyan, '4D'),
+    'panel.dropBorder': p.magenta,
+    'panelTitle.activeBorder': p.magenta,
+    'panelTitle.activeForeground': p.cyanBright,
+    'panelSectionHeader.background': alpha(p.uv, '14'),
+    'panelSectionHeader.foreground': p.uvBright,
+    'panelInput.border': alpha(p.uv, '66'),
+
+    // Integrated terminal
+    'terminal.border': alpha(p.cyan, '4D'),
+    'terminal.selectionBackground': alpha(p.uv, '59'),
+    'terminal.findMatchBackground': alpha(p.magenta, '73'),
+    'terminal.findMatchHighlightBackground': alpha(p.magenta, '40'),
+    'terminal.tab.activeBorder': p.magenta,
+    'terminalCommandDecoration.defaultBackground': p.uvDim,
+
+    // Notifications and settings
+    'notificationToast.border': alpha(p.uv, '80'),
+    'notificationCenter.border': alpha(p.uv, '80'),
+    'notificationCenterHeader.foreground': p.cyan,
+    'settings.headerForeground': p.cyan,
+
+    // Chat
+    'chat.requestBorder': alpha(p.uv, '66'),
+    'chat.requestBubbleBackground': alpha(p.uv, '33'),
+    'chat.requestBubbleHoverBackground': alpha(p.uv, '40'),
+    'chat.requestCodeBorder': alpha(p.cyan, '66'),
+    'chat.slashCommandBackground': alpha(p.magenta, '2E'),
+    'chat.slashCommandForeground': p.magentaBright,
+    'chat.avatarBackground': p.uv,
+    'chat.avatarForeground': p.bg0,
+    'chat.checkpointSeparator': alpha(p.uv, '80'),
+    'interactive.activeCodeBorder': p.cyan,
+    'interactive.inactiveCodeBorder': alpha(p.uv, '4D'),
+    'inlineChat.border': alpha(p.uv, '99'),
+    'inlineChat.shadow': alpha(p.uv, '40'),
+    'inlineChatInput.border': alpha(p.uv, '66'),
+    'inlineChatInput.focusBorder': p.cyan,
+    'agentsCard.border': alpha(p.uv, '59'),
+    'agentsChatInput.border': alpha(p.uv, '80'),
+    'agentsChatInput.focusBorder': p.cyan,
+    'agentsNewSessionButton.hoverBackground': p.magenta,
+    'agentsNewSessionButton.border': p.cyan,
+  };
+}
+
 function build(variant) {
   const sourcePath = path.join(root, variant.source);
   const source = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
@@ -709,7 +913,7 @@ function build(variant) {
     type: 'dark',
     author: `messified (based on ${source.name} by ${source.author})`,
     semanticHighlighting: true,
-    colors: workbenchColors(palette),
+    colors: { ...workbenchColors(palette), ...(variant.colorOverrides ? variant.colorOverrides(palette) : {}) },
     tokenColors: remapTokenColors(source.tokenColors, palette.syntax, variant.source),
     semanticTokenColors: semanticTokenColors(palette.syntax),
   };
