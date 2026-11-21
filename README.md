@@ -1,8 +1,8 @@
 # EVO Afterdark
 
-Dark VS Code / Kiro color themes built on deep cosmic blacks with electric cyan, ultraviolet and neon magenta accents.
+Dark color themes for VS Code and VS Code-based editors such as Kiro, built on deep cosmic blacks with electric cyan, ultraviolet and neon magenta accents.
 
-- **EVO | Neon** goes all in: saturated neon syntax, ultraviolet glow borders and widget shadows, cyan chrome text, a deep ultraviolet status bar and magenta match and focus accents. Large surfaces stay dark and text keeps WCAG AA contrast (4.5:1).
+- **EVO | Neon** goes all in: saturated neon syntax, ultraviolet glow borders and widget shadows, cyan chrome text, a deep ultraviolet status bar and magenta match and focus accents. Large surfaces stay dark.
 - **EVO | Void** is the calmer, flat alternative. Its neon is reserved for keywords, functions, operators, tags and UI focus states.
 
 | Theme | Editor | Cyan | Ultraviolet | Magenta | Foreground |
@@ -12,7 +12,43 @@ Dark VS Code / Kiro color themes built on deep cosmic blacks with electric cyan,
 
 Both themes keep the full TextMate scope coverage of the original Evro Dark themes (233 rules each), enable semantic highlighting, and style the editor, tabs, explorer, command palette, panels, integrated terminal (including ANSI colors), Git decorations and diffs, and the chat surfaces exposed through VS Code color keys.
 
-## Install from a local VSIX
+## Install
+
+Download `evo-afterdark-1.1.0.vsix` from the [GitHub releases](https://github.com/messified/EVO/releases), then run **Extensions: Install from VSIX...** and select the file, or install it from a terminal:
+
+```sh
+code --install-extension evo-afterdark-1.1.0.vsix
+# Kiro on macOS:
+/Applications/Kiro.app/Contents/Resources/app/bin/code --install-extension evo-afterdark-1.1.0.vsix
+```
+
+EVO Afterdark is not published to Open VSX, the extension gallery Kiro uses, so it does not appear in Kiro's extension search.
+
+Then run **Preferences: Color Theme** and choose **EVO | Neon** or **EVO | Void**, or set it per workspace:
+
+```json
+"workbench.colorTheme": "EVO | Neon"
+```
+
+## Supported editors
+
+- The manifest requires VS Code 1.87 or later (`engines.vscode` is `^1.87.0`).
+- Kiro: developed and reviewed in Kiro 1.5.11 (based on VS Code 1.145.0) on macOS, where every workbench color key the themes set is defined. Other Kiro versions have not been tested.
+
+## Contrast
+
+Measured with the WCAG 2.x contrast-ratio formula, with translucent colors composited onto their background. These are automated measurements, not an accessibility audit.
+
+| | EVO \| Neon | EVO \| Void |
+| --- | --- | --- |
+| Editor text on the editor background | 15.16:1 | 15.01:1 |
+| Comments | 4.82:1 | 4.62:1 |
+| TextMate rules at 4.5:1 or more | 231 of 233 | 231 of 233 |
+| Lowest TextMate rules (`meta.tag`, JSON property-name quotes) | 3.25:1, 3.08:1 | 3.11:1, 2.86:1 |
+| Checked UI text pairs at 4.5:1 or more | 121 of 124 | 112 of 122 |
+| Lowest UI text | 4.34:1 (input placeholders) | 3.93:1 (input placeholders, inlay hints) |
+
+## Build from source
 
 ```sh
 npm install
@@ -20,19 +56,7 @@ npm test
 npm run package
 ```
 
-`npm run package` writes `evo-afterdark-<version>.vsix` to the repository root. Install it with **Extensions: Install from VSIX...**, or from a terminal:
-
-```sh
-code --install-extension /absolute/path/to/evo-afterdark-1.1.0.vsix
-# Kiro IDE on macOS:
-/Applications/Kiro.app/Contents/Resources/app/bin/code --install-extension /absolute/path/to/evo-afterdark-1.1.0.vsix
-```
-
-Then run **Preferences: Color Theme** and choose **EVO | Neon** or **EVO | Void**, or set it per workspace:
-
-```json
-"workbench.colorTheme": "EVO | Neon"
-```
+`npm run package` writes `evo-afterdark-<version>.vsix` to the repository root.
 
 ## Development
 
