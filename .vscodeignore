@@ -4,3 +4,7 @@
 vsc-extension-quickstart.md
 package-lock.json
 *.vsix
+scripts/**
+themes/EvroDark.json
+themes/EvroDarkerFlat.json
+screenshots/**

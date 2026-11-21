@@ -1,17 +1,17 @@
 {
-  "name": "evro-dark",
-  "displayName": "Evro Dark",
-  "description": "Immerse yourself in the enchanting glow of Evro Dark and let your creativity soar under the stars of the digital night sky. ✨",
-  "version": "2.0.0",
-  "publisher": "EvroHQ",
+  "name": "evo-afterdark",
+  "displayName": "EVO Afterdark",
+  "description": "Deep cosmic blacks with electric cyan, ultraviolet and neon magenta accents. Two dark themes, EVO | Neon and EVO | Void, based on Evro Dark by EvroHQ.",
+  "version": "1.1.0",
+  "publisher": "messified",
   "license": "MIT",
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/evrohq/EvroDark"
+    "url": "https://github.com/messified/EVO"
   },
   "galleryBanner": {
-    "color": "#151515",
+    "color": "#0B1020",
     "theme": "dark"
   },
   "engines": {
@@ -20,26 +20,33 @@
   "keywords": [
     "theme",
     "dark theme",
-    "one dark",
-    "evro theme",
-    "evro dark",
-    "sublime dark",
-    "GitHub"
+    "neon",
+    "cyberpunk",
+    "evo afterdark",
+    "evro dark"
   ],
   "categories": [
     "Themes"
   ],
+  "scripts": {
+    "build": "node scripts/build-themes.js",
+    "test": "node scripts/validate-themes.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^4.1.1"
+  },
   "contributes": {
     "themes": [
       {
-        "label": "Evro Dark",
+        "label": "EVO | Neon",
         "uiTheme": "vs-dark",
-        "path": "./themes/EvroDark.json"
+        "path": "./themes/evo-neon-color-theme.json"
       },
       {
-        "label": "Evro Darker Flat",
+        "label": "EVO | Void",
         "uiTheme": "vs-dark",
-        "path": "./themes/EvroDarkerFlat.json"
+        "path": "./themes/evo-void-color-theme.json"
       }
     ]
   }
