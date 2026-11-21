@@ -1,4 +1,10 @@
 # CHANGELOG
+## 1.0.0 | 20/11/2026
+**EVO Afterdark** (`messified.evo-afterdark`), forked from Evro Dark 2.0.0
+- Added **EVO | Neon** (from Evro Dark) and **EVO | Void** (from Evro Darker Flat); the Evro themes are no longer contributed
+- Kept all 233 TextMate rules per variant, remapped to the EVO palette
+- Added semantic token colors and full workbench, terminal, Git/diff and chat colors
+- Added `npm run build`, `npm test` and `npm run package`
 
 ## 2.0.0 | 04/10/2026
 
